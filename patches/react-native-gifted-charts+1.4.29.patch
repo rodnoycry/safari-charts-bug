@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-gifted-charts/dist/LineChart/index.js b/node_modules/react-native-gifted-charts/dist/LineChart/index.js
+index 8fca2d8..e90b50b 100644
+--- a/node_modules/react-native-gifted-charts/dist/LineChart/index.js
++++ b/node_modules/react-native-gifted-charts/dist/LineChart/index.js
+@@ -598,7 +598,7 @@ export var LineChart = function (props) {
+             typeof strokeDashArray[1] === 'number') {
+             lineSvgPropsOuter.strokeDasharray = strokeDashArray;
+         }
+-        return (_jsxs(Svg, { onPress: props.onBackgroundPress, children: [lineGradient && getLineGradientComponent(), points.includes(SEGMENT_START) || points.includes(RANGE_ENTER) ? (ar.map(function (item, index) {
++        return (_jsxs(Svg, { style: { overflow: 'visible' }, onPress: props.onBackgroundPress, children: [lineGradient && getLineGradientComponent(), points.includes(SEGMENT_START) || points.includes(RANGE_ENTER) ? (ar.map(function (item, index) {
+                     var lineSvgProps = {
+                         d: item.d,
+                         fill: 'none',
